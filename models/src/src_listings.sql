@@ -2,7 +2,7 @@ WITH raw_listings AS (
     SELECT
     *
     FROM
-    {{ source('postgres', 'listings') }}
+    "postgres"."dbo"."listings"
 )
 SELECT
     id AS listing_id,

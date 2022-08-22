@@ -2,7 +2,7 @@ WITH raw_reviews AS (
     SELECT
     *
     FROM
-    {{ source('postgres', 'reviews') }}
+    "postgres"."dbo"."reviews"
 )
 SELECT
     listing_id,

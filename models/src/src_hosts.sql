@@ -2,7 +2,7 @@ WITH raw_hosts AS (
  SELECT
  *
  FROM
- {{ source('postgres', 'hosts') }}
+ "postgres"."dbo"."raw_hosts"
 )
 SELECT
  id AS host_id,
