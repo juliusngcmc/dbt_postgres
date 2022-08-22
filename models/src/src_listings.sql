@@ -5,8 +5,8 @@ WITH raw_listings AS (
     "postgres"."dbo"."raw_listings"
 )
 SELECT
-    id AS listing_id,
-    name AS listing_name,
+    ID AS listing_id,
+    NAME AS listing_name,
     listing_url,
     room_type,
     minimum_nights,
