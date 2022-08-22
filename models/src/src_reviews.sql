@@ -2,7 +2,7 @@ WITH raw_reviews AS (
     SELECT
     *
     FROM
-    "postgres"."dbo"."reviews"
+    "postgres"."dbo"."raw_reviews"
 )
 SELECT
     listing_id,
