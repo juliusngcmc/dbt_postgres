@@ -4,11 +4,11 @@
 
 -- SQLINES LICENSE FOR EVALUATION USE ONLY
 WITH fct_reviews AS (
-    SELECT * FROM {{ ref('fct_reviews') }}
+    SELECT * FROM postgres.dbo.fct_reviews
 ),
 
 full_moon_dates AS (
-    SELECT * FROM {{ ref('seed_full_moon_dates') }}
+    SELECT * FROM postgres.dbo_seed_full_moon_dates.seed_full_moon_dates
 )
 
 -- SQLINES LICENSE FOR EVALUATION USE ONLY

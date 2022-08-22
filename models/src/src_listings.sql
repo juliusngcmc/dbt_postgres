@@ -2,11 +2,11 @@ WITH raw_listings AS (
     SELECT
     *
     FROM
-    "postgres"."dbo"."raw_listings"
+    postgres.dbo.raw_listings
 )
 SELECT
-    RENAME ID TO listing_id,
-    RENAME NAME TO listing_name,
+    "ID" AS listing_id,
+    "NAME" AS listing_name,
     listing_url,
     room_type,
     minimum_nights,
